@@ -8,33 +8,29 @@ let fechaTerminoObj = new Date("may 31, 2017")
 let acciones = [
 	{
 		nombre: "trabajar",
-		fechaFinal: new Date ("april 12, 2017")
+		fechaFinal: new Date("april 12, 2017")
 	},
 	{
 		nombre: "pedir un aumento",
-		fechaFinal: new Date ("april 20, 2017")
-	}
-	/*{
-		nombre: "pedir un aumento",
-		fechaFinal: new Date ("april 24, 2017")
+		fechaFinal: new Date("april 20, 2017")
 	},
 	{
-		nombre: "pedir un aumento",
-		fechaFinal: new Date ("april 25, 2017")
+		nombre: "cobra mas",
+		fechaFinal: new Date("april 27, 2017")
 	},
 	{
-		nombre: "pedir un aumento",
-		fechaFinal: new Date ("may 5, 2017")
+		nombre: "inverir",
+		fechaFinal: new Date("may 20, 2017")
 	},
 	{
-		nombre: "pedir un aumento",
-		fechaFinal: new Date ("may 10*/, 2017")
+		nombre: "ahorar",
+		fechaFinal: new Date("may 27, 2017")
 	}
 
 ]
 
 //Dia de hoy
-let hoy = new Date("april 30, 2017")
+let hoy = new Date("may 30, 2017")
 
 
 // funciones
@@ -52,22 +48,24 @@ if (hoy >= fechaTerminoObj) {
 else {
 	console.log(`Le faltan ${diaFaltan()} para conseguir el objetivo sigue así`);
 
-	if (hoy >= acciones[0].fechaFinal) {
+	if (hoy >= acciones[0].fechaFinal && hoy < acciones[1].fechaFinal) {
 		console.log(`Hoy te toca hacer la acción ${acciones[0].nombre}`);
 	}
-	else if (hoy >= acciones[1].fechaFinal) {
+	else if (hoy >= acciones[1].fechaFinal && hoy < acciones[2].fechaFinal) {
 		console.log(`Hoy te toca hacer la acción ${acciones[1].nombre}`);
 	}
-	else if (hoy >= acciones[2].fechaFinal) {
+	else if (hoy >= acciones[2].fechaFinal && hoy < acciones[3].fechaFinal) {
 		console.log(`Hoy te toca hacer la acción ${acciones[2].nombre}`);
 	}
-	else if (hoy >= acciones[3].fechaFinal) {
+	else if (hoy >= acciones[3].fechaFinal && hoy < acciones[4].fechaFinal) {
 		console.log(`Hoy te toca hacer la acción ${acciones[3].nombre}`);
 	}
-	else if (hoy >= acciones[4].fechaFinal) {
+	else if (hoy >= acciones[4].fechaFinal && hoy < fechaTerminoObj ) {
 		console.log(`Hoy te toca hacer la acción ${acciones[4].nombre}`);
 	}
 }
+
+
 
 
 /*console.log(objetivo);
